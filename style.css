@@ -1,0 +1,229 @@
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 212vh;
+    background-color: rgba(128, 128, 128, 0.096);
+    border-bottom: 4px solid #dadada;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 20px gray;
+    margin-top: -2vh;
+    margin-left: 1vh;
+    margin-right: -5vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+@font-face {
+    font-family: logo;
+    src: url(font/Matemasie/logofont.ttf);
+}
+.logos{
+    font-family: logo;
+    font-size: 40px;
+    color: red;
+    margin-left: 6vh;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.logos:hover{
+    /* transform: scale(1.05); */
+    transform: rotatex(25deg);
+    text-shadow: 0px 0px 10px red;
+}
+
+ul{
+    display: flex;
+    gap: 4vh;
+    margin-right: 8vh;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+li{
+    list-style: none;
+    transition: 0.4s;
+
+}
+li:hover{
+    color: red;
+    cursor: pointer;
+    font-size: 21px;
+}
+.ban1{
+    width: 215vh;
+}
+.ban2{
+    width: 215vh;
+    margin-top: 2vh;
+}
+.product{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 25%;
+    border: 3px solid #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.4s;
+    margin-left: 5vh;
+    margin-top: 5vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.pic{
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+   
+}
+.bt{
+    width: 100%;
+    height: 100%;
+    margin-top: -2vh;
+    margin-bottom: 2vh;
+    margin-left: 1vh;
+}
+.bn{
+    width: 45%;
+    height: 10vh;
+    font-size: 20px;
+    margin-left: 1vh;
+    border-radius: 20%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.bn:hover{
+    background-color: #F3B519;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.st{
+    margin-top: -2vh;
+    margin-left: 1vh;
+}
+#star{
+    color: #F3B519;
+    
+}
+.des{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -1px;
+}
+.tit{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.log{
+    width: 209vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,red,green,blue);
+}
+.blade{
+    width: 30%;
+    margin-left: 80vh;
+    margin-top: 5vh;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    box-sizing: border-box;
+}
+.tt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    font-family: logo;
+    font-size: 36px;
+    animation-name: pr;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    border-bottom: 2px solid #dadada;
+}
+
+.na{
+    text-transform: capitalize;
+    margin-top: 15vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.foot{
+    width: 215vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-transform: capitalize;
+    background-color: aliceblue;
+}
+.det{
+    margin-left: 20vh;
+}
+.det >h1{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.det >p{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.det >p:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+@keyframes pr {
+    0%{
+        color: black;
+    }
+    30%{
+        color: red;
+    }
+    60%{
+        color: green;
+    }
+    80%{
+        color: blue;
+    }
+    100%{
+        color: pink;
+    }
+    
+}
+
+@keyframes spin {
+   
+    to{
+        rotate: 360deg;
+    }
+
+}
